@@ -1,0 +1,33 @@
+{
+  "name": "guesstimate_chrome",
+  "version": "0.0.1",
+  "description": "'Guesstimate for Trello Chrome Extension'",
+  "main": "index.js",
+  "dependencies": {
+    "arrive": "^2.4.1",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-newer": "^1.3.0",
+    "gulp-open": "^2.0.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stick97/GuesstimateChrome.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stick97/GuesstimateChrome/issues"
+  },
+  "homepage": "https://github.com/Stick97/GuesstimateChrome#readme"
+}

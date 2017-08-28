@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Guesstimate for Trello",
+    "description": "Enable hour estimates and assignments on Trello checklists.",
+    "version": "0.1",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/logo.png"
+    },
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "https://trello.com/"
+    ],
+    "background":{
+        "scripts": ["js/background.js"],
+        "persistent": true
+    },
+    "web_accessible_resources": [
+        "settings.html"
+    ],
+    "options_page": "settings.html",
+    "content_scripts": [{
+      "matches": ["https://trello.com/*"],
+      "css": ["css/trello.css"],
+      "js": ["js/jquery.js", "js/arrive.js", "js/trello-client.js", "js/trello-tasks.js"]
+    }]
+}
